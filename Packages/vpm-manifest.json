@@ -11,6 +11,9 @@
     },
     "dev.architech.protv.extras": {
       "version": "0.9.3-beta"
+    },
+    "dev.architech.videoplayershim": {
+      "version": "1.5.0"
     }
   },
   "locked": {
@@ -45,6 +48,12 @@
       "version": "0.22.0",
       "dependencies": {
         "com.vrchat.worlds": "^3.4"
+      }
+    },
+    "dev.architech.videoplayershim": {
+      "version": "1.5.0",
+      "dependencies": {
+        "com.vrchat.worlds": "^3.3"
       }
     }
   }
