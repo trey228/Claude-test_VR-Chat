@@ -6,10 +6,11 @@ using VRC.SDKBase;
 namespace UdonSharp.Examples.Utilities
 {
     /// <summary>
-    /// Swings a door open as a player approaches/passes through a trigger volume,
-    /// and closes it again after everyone has left. Local-only (not networked) -
-    /// each client animates the door based on its own view of nearby players.
-    /// Requires a Collider (isTrigger = true) on this same GameObject.
+    /// Swings a door open when a player clicks/interacts with it, holds it open
+    /// for a set duration, then swings it shut again. Interacting again while
+    /// open resets the open timer. Local-only (not networked) - each client
+    /// animates the door based on its own interaction.
+    /// Requires a Collider on this same GameObject for Interact to register.
     /// </summary>
     [AddComponentMenu("Udon Sharp/Utilities/Auto Swing Door")]
     [UdonBehaviourSyncMode(BehaviourSyncMode.NoVariableSync)]
@@ -22,21 +23,19 @@ namespace UdonSharp.Examples.Utilities
         public Transform[] doorParts;
 
         [Tooltip("Angle in degrees the door swings open around the hinge's up axis; sign controls direction")]
-        public float openAngle = -100f;
+        public float openAngle = -90f;
 
         [Tooltip("Degrees per second the door swings")]
         public float swingSpeed = 180f;
 
-        [Tooltip("Seconds after the last player leaves the trigger before the door swings shut")]
-        public float closeDelay = 1.5f;
+        [Tooltip("Seconds the door stays open after being clicked before it swings shut")]
+        public float openDuration = 15f;
 
         private Vector3[] _localOffsets;
         private Quaternion[] _localRotations;
         private float _currentAngle;
         private float _targetAngle;
-        private int _playersInside;
-        private float _closeTimer;
-        private bool _pendingClose;
+        private int _pendingCloseCount;
 
         void Start()
         {
@@ -51,35 +50,24 @@ namespace UdonSharp.Examples.Utilities
             }
         }
 
-        public override void OnPlayerTriggerEnter(VRCPlayerApi player)
+        public override void Interact()
         {
-            _playersInside++;
             _targetAngle = openAngle;
-            _pendingClose = false;
+            _pendingCloseCount++;
+            SendCustomEventDelayedSeconds(nameof(_CloseDoor), openDuration);
         }
 
-        public override void OnPlayerTriggerExit(VRCPlayerApi player)
+        public void _CloseDoor()
         {
-            _playersInside = _playersInside > 0 ? _playersInside - 1 : 0;
-            if (_playersInside == 0)
-            {
-                _pendingClose = true;
-                _closeTimer = closeDelay;
-            }
+            if (_pendingCloseCount > 0)
+                _pendingCloseCount--;
+
+            if (_pendingCloseCount == 0)
+                _targetAngle = 0f;
         }
 
         void Update()
         {
-            if (_pendingClose)
-            {
-                _closeTimer -= Time.deltaTime;
-                if (_closeTimer <= 0f)
-                {
-                    _targetAngle = 0f;
-                    _pendingClose = false;
-                }
-            }
-
             if (!Mathf.Approximately(_currentAngle, _targetAngle))
             {
                 _currentAngle = Mathf.MoveTowards(_currentAngle, _targetAngle, swingSpeed * Time.deltaTime);
