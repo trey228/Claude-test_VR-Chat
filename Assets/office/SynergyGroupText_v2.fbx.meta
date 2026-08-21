@@ -3,7 +3,12 @@ guid: 4d9bd05ca0a5bfc4a8b7923028a93992
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_SynergyText_Glow
+    second: {fileID: 2100000, guid: 1260e9017bbb7bc4088a50b1b2f3b3ef, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

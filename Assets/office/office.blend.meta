@@ -3,7 +3,197 @@ guid: 5116cf7775e6cbc42a8457166e6f86df
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BenchPadLeather
+    second: {fileID: 2100000, guid: 2041a1bfc3c7fdc459349d93d6f1bdc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Conifer Tree Green
+    second: {fileID: 2100000, guid: b02b7e8c2fcf39a47bb8012286044791, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass
+    second: {fileID: 2100000, guid: 15aff066d59f44c44a84264a1d89029b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass.001
+    second: {fileID: 2100000, guid: b3acb2d22d4553f46b3d87066e894f54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gray Carpet (Procedural)
+    second: {fileID: 2100000, guid: a73b0a60dafc5b4418f230236192ed10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ceiling
+    second: {fileID: 2100000, guid: 1d14782df96ed9f40911cd8037bb0e2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Chair_Fabric
+    second: {fileID: 2100000, guid: a6310d3a654b6c942b4d3fba0bf14107, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Chair_Metal
+    second: {fileID: 2100000, guid: 8df6349dea97383488b88f3de6438fe5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Desk_Black
+    second: {fileID: 2100000, guid: ca96d094f336bbf4b97102b3de3cb812, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Door_Black
+    second: {fileID: 2100000, guid: 583f66972ed37424091cfc4871b48ddc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Door_Frame
+    second: {fileID: 2100000, guid: 06b45c513a30a2244bef97769f5ee496, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Door_Handle
+    second: {fileID: 2100000, guid: e9af9ceaf8d56ef42a2c831c3f15f7d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_GlassWall
+    second: {fileID: 2100000, guid: 245ee0adee77c6f43becc1e9bf4a0aa8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Handle_Metal
+    second: {fileID: 2100000, guid: 67d6defd7b574bd4b815535a1fc9b065, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Hutch_Glass
+    second: {fileID: 2100000, guid: 66111f5b4b855b941a8da558822548ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_KB_Body
+    second: {fileID: 2100000, guid: 8e673a2f2dfd0a345b78ca0b42044ad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_KB_Keys
+    second: {fileID: 2100000, guid: cded5e3895379cd4ba2b4bb9eab50cd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_LED_Blue
+    second: {fileID: 2100000, guid: 85bc9695792988846bf87f91d12bcb9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_LED_White
+    second: {fileID: 2100000, guid: 7f332d6aab6ffc649912fc9a3ac55be7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Monitor_Bezel
+    second: {fileID: 2100000, guid: 02763d4fedaa07a4da681b9751312a81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Monitor_Screen
+    second: {fileID: 2100000, guid: 016609bd55b96eb4895afe3a86299e18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Mouse_Accent
+    second: {fileID: 2100000, guid: 7cea6a058eafc2a4092b087e21ad4ec0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Mouse_Body
+    second: {fileID: 2100000, guid: 0005fc597c6fc104ba46519eacdf9677, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Mouse_LED
+    second: {fileID: 2100000, guid: b53bae32d94961a4991bc580aa8fa700, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Mullion
+    second: {fileID: 2100000, guid: 21a14db4a76247f418182b470e3aa0dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Planter_Concrete
+    second: {fileID: 2100000, guid: afa7aecba58970646ba5bef91933915d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_SynergyText_Glow
+    second: {fileID: 2100000, guid: 76317e97d056de24fa5e18da7510e175, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_WallPanel_Dark
+    second: {fileID: 2100000, guid: e096a38db7dbb4749b1b253ef4f08450, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PianoBlackGloss
+    second: {fileID: 2100000, guid: 0e8293a681443594a83b11afeed2f366, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PianoBlackKey
+    second: {fileID: 2100000, guid: ddecc09ff2e1e1d41ab8355fea090152, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PianoButton
+    second: {fileID: 2100000, guid: 410aba1d216c71348b9548a771f891f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PianoButtonRed
+    second: {fileID: 2100000, guid: c3c90484cd55a85439eac9acd96ba816, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PianoGrille
+    second: {fileID: 2100000, guid: 7dd8d235dc7dade488dc51f9b9b9f9d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PianoMetal
+    second: {fileID: 2100000, guid: f72193d64a5292b4b885580ad469d150, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PianoScreen
+    second: {fileID: 2100000, guid: 1f5a6dfcc8faf504f8ecaea948042af8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PianoWhiteKey
+    second: {fileID: 2100000, guid: 412e42362670c86459e243fa75362182, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree Bark
+    second: {fileID: 2100000, guid: 19a8fb61b41fcb54daa816c4045a13e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_pavers_02
+    second: {fileID: 2100000, guid: 50460bcc8d4353e4c92812635ff94c12, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
